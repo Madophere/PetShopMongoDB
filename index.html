@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+    
+<div class="total">
+    <h1 style="color:Tomato;">Creating a Database for Petshop</h1>
+  
+  <h3 style="color:DodgerBlue;">***Queries for collection of petdetails***</h3>
+  
+  <div style="color:MediumSeaGreen;" >
+  use petShop();<br>
+  db.createCollection("petDet");<br>
+  db.petDet.insertMany([{<br>
+     <br> "pet name": "Momo",<br>
+      "idNo": 111,<br>
+      "petType":"cat",<br>
+      "breedType": "mainecoon",<br>
+      "age": "30days",<br>
+      "price": 2200<br>
+  },{<br>
+     <br> "pet name": "pussy",<br>
+      "idNo": 112,<br>
+      "petType":"cat",<br>
+      "breedType": "persiancat",<br>
+      "age": "25days",<br>
+      "price": 1500<br>
+  },{<br>
+    <br>  "pet name": "oliver",<br>
+      "idNo": 113,<br>
+      "petType":"cat",<br>
+      "breedType": "scottishfold",<br>
+      "age": "32days",<br>
+      "price": 3000<br>
+  },{<br>
+      <br>"pet name": "lucky",<br>
+      "idNo": 114,<br>
+      "petType":"dog",<br>
+      "breedType": "Labrador",<br>
+      "age": "45days",<br>
+      "price": 8000<br>
+  },{<br>
+      <br>"pet name": "sugar",<br>
+      "idNo": 115,<br>
+      "petType":"dog",<br>
+      "breedType": "germanshepard",<br>
+      "age": "30days",<br>
+      "price": 10000<br>
+  },{<br><br>
+      "pet name": "charlie",<br>
+      "idNo": 116,<br>
+      "petType":"dog",<br>
+      "breedType": "siberianhusky",<br>
+      "age": "30days",<br>
+      "price": 45000<br>
+  },{<br>
+     <br> "pet name": "goldee",<br>
+      "idNo": 117,<br>
+      "petType":"fish",<br>
+      "breedType": "guppies",<br>
+      "age": "12days",<br>
+      "price": 500<br>
+  },{<br>
+      <br>"pet name": "molly",<br>
+      "idNo": 118,<br>
+      "petType":"fish",<br>
+      "breedType": "angelfish",<br>
+      "age": "12days",<br>
+      "price": 450<br>
+  },{<br>
+      <br>"pet name": "dolly",<br>
+      "idNo": 119,<br>
+      "petType":"fish",<br>
+      "breedType": "fighter",<br>
+      "age": "10days",<br>
+      "price": 1250<br>
+  },{<br>
+      <br>"pet name": "annakili",<br>
+      "idNo": 120,<br>
+      "petType":"parrot",<br>
+      "breedType": "goldenmackow",<br>
+      "age": "45days",<br>
+      "price": 250<br>
+  }])</div>
+  
+  <a href="https://imgur.com/1jvyoXW"><img src="https://i.imgur.com/1jvyoXW.png" class="img" /></a>
+  
+  <div style="color:MediumSeaGreen;">
+    use petShop();<br>
+  db.petDet.find();<br>
+  </div>
+  <a href="https://imgur.com/6hCxOhJ"><img src="https://i.imgur.com/6hCxOhJ.png" class="img" /></a>
+  
+  
+    <h3 style="color:DodgerBlue;">***Queries for collection of BuyerDetails***</h3>
+    <div style="color:MediumSeaGreen;">
+    use petShop();<br>
+  db.createCollection("buyDet");<br>
+  db.buyDet.insertMany([{<br>
+     <br> "Buyer name": "Shanjay",<br>
+      "Address": "ambattur",<br>
+      "petType":"dog",<br>
+      "breedReq": "Labrador"<br>
+  },{<br>
+     <br> "Buyer name": "MohanBabu",<br>
+      "Address": "avadi",<br>
+      "petType":"cat",<br>
+      "breedReq": "persiancat"<br>
+  },{<br>
+      <br> 
+    "Buyer name": "Madhan",<br>
+    "Address": "thiruninravur",<br>
+      "petType":"cat",<br>
+      "breedReq": "scottishfold"<br>
+  },{<br>
+      <br>"Buyer name": "krishna",<br>
+     "Address": "virudhunagar",<br> 
+      "petType":"cat",<br> 
+      "breedReq": "mainecoon"<br> 
+  },{<br> 
+      <br> "Buyer name": "Bharath",<br> 
+      "Address": "1000Lights",<br> 
+      "petType":"dog",<br> 
+      "breedReq": "germanshepard"<br> 
+  },{<br> 
+     <br>  "Buyer name": "Guna",<br> 
+      "Address": "seyyur",<br> 
+      "petType":"dog",<br> 
+      "breedReq": "siberianhusky"<br> 
+  },{<br> 
+      <br> "Buyer name": "kc",<br> 
+      "Address": "virudhachalam",<br> 
+      "petType":"fish",<br> 
+      "breedReq": "guppies"<br> 
+  },{<br> 
+      <br> "Buyer name": "saimohan",<br> 
+      "Address": "bangalore",<br> 
+      "petType":"fish",<br> 
+      "breedReq": "angelfish"<br> 
+  },{<br> 
+      <br> "Buyer name": "suman",<br> 
+      "Address": "chennai",<br> 
+      "petType":"fish",<br> 
+      "breedReq": "fighter"<br> 
+  },{<br> 
+      <br> "Buyer name": "raghav",<br> 
+      "Address": "velachery",<br> 
+      "petType":"parrot",<br> 
+      "breedReq": "goldenmackow"<br> 
+  }])<br> 
+  </div>
+  <a href="https://imgur.com/zEXcFEG"><img src="https://i.imgur.com/zEXcFEG.png" class="img" /></a>
+  
+  <div style="color:MediumSeaGreen;">
+    use petShop();<br>
+  db.petDet.find();<br>
+  </div>
+  
+  <a href="https://imgur.com/zmz40n3"><img src="https://i.imgur.com/zmz40n3.png" class="img"  /></a>
+  
+   <h3 style="color:DodgerBlue;">***Queries for collection of Details required by buyer vs pet***</h3>
+  <div style="color:MediumSeaGreen;">
+   <br> use petShop();<br>
+  db.buyDet.aggregate([<br>
+     {<br>
+        $lookup:<br>
+           {<br>
+              from: "petDet",<br>
+              localField: "breedReq",<br>
+              foreignField: "breedType",<br>
+              as: "details"<br>
+          }<br>
+     }<br>
+  ])<br>
+  </div>
+  
+  <a href="https://imgur.com/01jlB8k"><img src="https://i.imgur.com/01jlB8k.png" class="img" /></a>
+    </div>
+</body>
+</html>
